@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src ="jquery.loadTemplate.js"></script>
+    <script type="text/javascript" src ="script.js"></script>
+    <link type="text/css" href="styles.css" rel='stylesheet'>
+    <title>New York Times Book Review Search</title>
+    
+    <script type="text/html" id="templateID">
+        <div id="contentWrapper">
+            <div><b>Book Title: </b><span data-content="book_title"></span></div>
+            <div><b>Author: </b><span data-content="book_author"></span></div>
+            <div><b>Summary: </b><span data-content="summary" data-format="isProvided"></span></div>
+            <div><b>Reviewer: </b><span data-content="byline" data-format="toNormalCase"></span></div>
+            <div data-content="url" data-format="clickableizer"></div>
+            <br/> <hr/> <br/>
+        </div>
+    </script>
+     
+</head>
+
+<body>
+    <div class="box" id="revInput">
+        <h1>Search New York Times Book Reviews By Title and/or Author</h1>
+        
+        <div class="flexBreak"></div>
+        <div id="bInfo">
+            <input type="text" id="bTitle" placeholder="Book Title"/>
+            <input type="text" id="bAuth" placeholder="Author"/>
+            <input type="button" id="go" value="Search"/>
+        </div>
+    </div>
+    <br/>
+    <p id="results" class="box"></p>
+    <div id="containerID"></div>
+    
+    
+        <div class="box">
+        <div id="nav">
+            <button id="prev">&#60;</button>
+            <p id="curr">1</p>
+            <button id="next">&#62;</button>
+        </div>
+        </div>
+    
+    
+</body>
+
+</html> 

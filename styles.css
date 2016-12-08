@@ -1,0 +1,61 @@
+html {
+    background-color: #c6bc8d;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#contentWrapper {
+    background-color: bisque;
+    width: 80%; 
+    margin: auto;
+    padding: 10px;
+} 
+#results {
+    color: red;
+    font-weight: bold;
+}
+.flexBreak {
+    width: 100%;
+}
+#nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 100%;
+    width: 20%;
+    margin: 20px;
+        
+}
+button {
+    height: 100%;
+}
+#binfo {
+    justify-content: space-between;
+    height: 100%;
+}
+input {
+    margin: 100px 0px;
+}
+#revInput {
+    text-shadow: 2px 2px 20px #fff;
+    background-image: url(new_york.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px;
+    margin: 0px;
+}
+#curr {
+    position: relative;
+    font-size: 1.25em;
+    font-weight: bold;
+    top: -20px;
+}
